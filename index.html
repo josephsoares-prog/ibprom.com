@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBPROM Corp. | Strategic Advisory for Growth-Stage Leaders</title>
+    <meta name="description" content="IBPROM Corp. is a boutique strategic advisory firm serving a select portfolio of private clients. Leadership, growth strategy, and business development. As featured in Forbes and Newsweek.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0c1a2e;
+            --navy-light: #162a45;
+            --gold: #c9a84c;
+            --gold-soft: #d4b86a;
+            --cream: #f8f5ef;
+            --text: #2a2a2a;
+            --text-light: #6b6b6b;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ─── NAV ─── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(12, 26, 46, 0.97);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .nav-contact {
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-soft);
+            text-decoration: none;
+            border: 1px solid rgba(201, 168, 76, 0.3);
+            padding: 0.6rem 1.6rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-contact:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--navy);
+            color: var(--white);
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 30%, rgba(201, 168, 76, 0.04) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 740px;
+        }
+
+        .hero-pre {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.4rem, 5vw, 3.6rem);
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 1.8rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 560px;
+            margin: 0 auto 3rem;
+        }
+
+        .hero-divider {
+            width: 50px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto 3rem;
+        }
+
+        .featured-in {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .featured-label {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .featured-logos {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .featured-logos a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.35);
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .featured-logos a:hover {
+            color: var(--gold-soft);
+        }
+
+        /* ─── PRACTICE AREAS ─── */
+        .practice {
+            padding: 7rem 2rem;
+            background: var(--cream);
+        }
+
+        .practice-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-weight: 400;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--text-light);
+            max-width: 600px;
+            margin-bottom: 4rem;
+            line-height: 1.8;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .area-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-top: 2px solid var(--gold);
+        }
+
+        .area-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        .area-card p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* ─── APPROACH ─── */
+        .approach {
+            padding: 7rem 2rem;
+            background: var(--white);
+        }
+
+        .approach-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .approach-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.7;
+            color: var(--navy);
+            margin-bottom: 2rem;
+        }
+
+        .approach-detail {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--text-light);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ─── CREDENTIALS ─── */
+        .credentials {
+            padding: 5rem 2rem;
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .credentials-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cred-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .cred-item {
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .cred-item .cred-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 0.4rem;
+        }
+
+        .cred-item .cred-desc {
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 1px;
+        }
+
+        /* ─── CONTACT ─── */
+        .contact {
+            padding: 7rem 2rem;
+            background: var(--cream);
+            text-align: center;
+        }
+
+        .contact-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--navy);
+            margin-bottom: 1.2rem;
+        }
+
+        .contact p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-cta {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--white);
+            background: var(--navy);
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-cta:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            padding: 3rem 2rem;
+            background: var(--navy);
+            text-align: center;
+            border-top: 1px solid rgba(201, 168, 76, 0.15);
+        }
+
+        footer p {
+            font-size: 0.7rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.3);
+            letter-spacing: 1px;
+        }
+
+        /* ─── MOBILE ─── */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.2rem 1.5rem;
+            }
+
+            .nav-logo {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .hero {
+                padding: 8rem 1.5rem 4rem;
+            }
+
+            .featured-in {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .practice, .approach, .contact {
+                padding: 5rem 1.5rem;
+            }
+
+            .cred-grid {
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">IBPROM</a>
+        <a href="#contact" class="nav-contact">Inquire</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-pre">Strategic Advisory &middot; Private Clients</p>
+            <h1>We help leaders architect growth in complex environments</h1>
+            <p>IBPROM is a boutique advisory firm serving a select portfolio of private clients. We work at the intersection of strategy, leadership, and commercial growth — where the stakes are high and discretion matters.</p>
+            <div class="hero-divider"></div>
+            <div class="featured-in">
+                <span class="featured-label">Featured in</span>
+                <div class="featured-logos">
+                    <a href="https://www.forbes.com/councils/forbeshumanresourcescouncil/2024/03/07/executive-coaching-the-key-to-unlocking-potential-in-the-c-suite/" target="_blank" rel="noopener">Forbes</a>
+                    <a href="https://www.newsweek.com/beyond-authenticity-cultivating-resilient-leadership-modern-era-1829944" target="_blank" rel="noopener">Newsweek</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRACTICE AREAS -->
+    <section class="practice">
+        <div class="practice-inner">
+            <p class="section-label">Practice Areas</p>
+            <h2 class="section-title">Where complexity meets clarity</h2>
+            <p class="section-subtitle">Our engagements are structured around three disciplines. Each is tailored to the client's operating reality — not templated, not productized.</p>
+
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>Growth Strategy &amp; Business Development</h3>
+                    <p>Market entry, revenue architecture, partnership strategy, and commercial positioning for founders and leadership teams scaling through inflection points. We design the growth system — not just the plan.</p>
+                </div>
+                <div class="area-card">
+                    <h3>Executive Advisory &amp; Leadership</h3>
+                    <p>Confidential counsel for principals navigating high-stakes transitions, organizational complexity, and leadership challenges. Informed by deep experience across government, private sector, and institutional mandates.</p>
+                </div>
+                <div class="area-card">
+                    <h3>Sales &amp; Market Positioning</h3>
+                    <p>Strategic sales architecture for high-ticket offers. We help leaders close $10K–$100K+ engagements through trust-based positioning, refined discovery, and conversion frameworks built for premium markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="approach">
+        <div class="approach-inner">
+            <p class="section-label">Our Approach</p>
+            <p class="approach-text">We do not take on volume. Our practice is deliberately small — a curated portfolio of clients who share a common trait: they are building something that matters, and they need a strategic partner who has operated at the highest levels.</p>
+            <p class="approach-detail">IBPROM was founded to bring institutional-grade advisory to the private market. Our Managing Partner has served in advisory roles to the Prime Minister of Canada, led strategic mandates for the Senate, Treasury Board, and Transport Canada, and is a Fellow of Harvard Medical School's McLean Coaching Institute.</p>
+            <p class="approach-detail">Today, that depth of experience is deployed for a select group of founders, executives, and organizations where the work is confidential, the impact is measurable, and the relationship is long-term.</p>
+        </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="credentials">
+        <div class="credentials-inner">
+            <p class="section-label" style="color: var(--gold);">Credentials</p>
+            <div class="cred-grid">
+                <div class="cred-item">
+                    <p class="cred-title">Forbes</p>
+                    <p class="cred-desc">Published Contributor</p>
+                </div>
+                <div class="cred-item">
+                    <p class="cred-title">Harvard</p>
+                    <p class="cred-desc">McLean Institute Fellow</p>
+                </div>
+                <div class="cred-item">
+                    <p class="cred-title">Newsweek</p>
+                    <p class="cred-desc">Expert Contributor</p>
+                </div>
+                <div class="cred-item">
+                    <p class="cred-title">Grand Diplômé</p>
+                    <p class="cred-desc">UQO 2022</p>
+                </div>
+                <div class="cred-item">
+                    <p class="cred-title">Trilingual</p>
+                    <p class="cred-desc">EN · FR · PT</p>
+                </div>
+                <div class="cred-item">
+                    <p class="cred-title">Gov & Private</p>
+                    <p class="cred-desc">Sector Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <p class="section-label">Private Inquiry</p>
+            <h2>Engagement begins with a conversation</h2>
+            <p>IBPROM works exclusively by referral and direct inquiry. If you are a founder, executive, or organization exploring a strategic advisory relationship, we welcome your correspondence.</p>
+            <a href="mailto:info@ibprom.com" class="contact-cta">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 IBPROM Corp. &middot; Ottawa &middot; Gatineau &middot; All rights reserved</p>
+    </footer>
+
+</body>
+</html>
