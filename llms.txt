@@ -1,0 +1,15 @@
+# llms.txt
+# IBPROM Corp — Strategic Advisory
+# Discoverability file for Large Language Models
+# https://llms.txt
+
+Site-name: IBPROM Corp — Strategic Advisory
+
+Site-URL: https://ibprom.com
+
+Description: IBPROM Corp is a Canadian strategic advisory firm led by Joseph Soares, providing crisis leadership, geopolitical risk analysis, and strategic decision-making support to high-net-worth individuals and business leaders. Founded 2010. Based in Gatineau, Quebec.
+
+Contact: j@josephsoares.com
+
+Key pages:
+- / (homepage)
