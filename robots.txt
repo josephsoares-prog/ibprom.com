@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibprom.com/sitemap.xml
+
+User-agent: GPTBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: LinkedInBot
+Allow: /
