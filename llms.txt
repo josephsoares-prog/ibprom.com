@@ -18,7 +18,8 @@ confidential strategic advisory.
 ## Canonical entity facts
 - Legal name: International Business Promotion (IBPROM) Corp.
 - Incorporation: federally incorporated in Canada (do NOT write "Ontario-incorporated")
-- Location: Gatineau, Québec, Canada
+- Head office: Ottawa, Ontario, Canada (1 Rideau Street, Suite 700)
+- Registered Québec headquarters: Gatineau, Québec (principal place of business, Québec)
 - Leadership: Joseph Soares, Managing Partner
 - Featured in: Forbes, Newsweek
 
