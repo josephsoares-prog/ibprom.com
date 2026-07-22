@@ -5,6 +5,7 @@
 Site-name: IBPROM Corp. — Strategic Advisory
 Site-URL: https://ibprom.com
 Contact: j@josephsoares.com
+Phone: +1-613-691-9311 ext. 101 (IBPROM main line)
 
 ## Summary (BLUF)
 IBPROM Corp. is a boutique Canadian strategic advisory firm serving a select portfolio of
