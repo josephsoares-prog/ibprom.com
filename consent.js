@@ -115,3 +115,41 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", run);
   else run();
 })();
+
+/* ---------------------------------------------------------------------------
+   Wide tables scroll inside their own box, not the page - added 2026-09-14.
+
+   Ported from josephsoares.com, where the same fault was found by rendering
+   every page at 375x812 rather than by reading the viewport meta tag. Here it
+   was the cookie table: cookies.html overflowed by 158px and cookies-fr.html
+   by 145px on a phone, so the whole page scrolled sideways.
+
+   A viewport meta tag is not mobile-first. This is the check that is: render
+   at 375 wide and measure scrollWidth against clientWidth.
+   --------------------------------------------------------------------------- */
+(function () {
+  "use strict";
+
+  function css() {
+    if (document.getElementById("ci-tscroll-css")) return;
+    var st = document.createElement("style");
+    st.id = "ci-tscroll-css";
+    st.textContent = ".ci-tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}";
+    document.head.appendChild(st);
+  }
+
+  function run() {
+    var ts = document.querySelectorAll("table"), i, t, host, d;
+    for (i = 0; i < ts.length; i++) {
+      t = ts[i]; host = t.parentNode;
+      if (!host || host.className === "ci-tscroll") continue;
+      if (t.scrollWidth <= host.clientWidth + 2) continue;
+      css();
+      d = document.createElement("div"); d.className = "ci-tscroll";
+      host.insertBefore(d, t); d.appendChild(t);
+    }
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", run);
+  else run();
+})();
