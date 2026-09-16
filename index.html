@@ -496,8 +496,22 @@
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"69b933d5574de0002181290e"})},
 document.head.appendChild(o)}initApollo();</script>
+<style>
+/* Corridor Intelligence strip, added 2026-09-16. Quiet and permanent:
+   ibprom.com is four pages, so a dismissible overlay would be effort spent
+   where nobody is standing. One line, always on, no close button. */
+#ci-strip{background:#F2EFE9;border-bottom:1px solid #DED6C4;display:flex;align-items:center;
+  justify-content:center;gap:12px;padding:11px 20px;font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:13.5px;color:#2F3B4C;text-align:center;flex-wrap:wrap}
+#ci-strip .ci-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9A7D1E;font-weight:600}
+#ci-strip a{color:#0A3161;font-weight:600;text-decoration:none;border-bottom:1.5px solid #D4AF37;white-space:nowrap}
+#ci-strip a:hover{border-bottom-color:#0A3161}
+@media(max-width:600px){#ci-strip{padding:10px 16px;gap:7px;font-size:13px}}
+</style>
 </head>
 <body>
+<div id="ci-strip"><span class="ci-tag">Corridor Intelligence</span><span>Joseph Soares publishes strategic analysis for business leaders, weekly.</span><a href="https://josephsoares.com/index.html?utm_source=ibprom&amp;utm_medium=banner&amp;utm_campaign=corridor-intelligence&amp;ref=ban-ibprom">Read the latest &rarr;</a></div>
+
 
     <!-- NAV -->
     <nav>
