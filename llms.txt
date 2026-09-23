@@ -4,7 +4,7 @@
 
 Site-name: IBPROM Corp. — Strategic Advisory
 Site-URL: https://ibprom.com
-Contact: j@josephsoares.com
+Contact: info@josephsoares.com
 Phone: +1-613-691-9311 ext. 101 (IBPROM main line)
 
 ## Summary (BLUF)
@@ -35,7 +35,7 @@ confidential strategic advisory.
 - /cookies.html  Cookie Policy
 
 ## Engagement
-Start at https://josephsoares.com/call.html or email j@josephsoares.com.
+Start at https://josephsoares.com/call.html or email info@josephsoares.com.
 
 ## sameAs
 - https://josephsoares.com
