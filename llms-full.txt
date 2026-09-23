@@ -7,7 +7,7 @@
 
 Site-name: IBPROM Corp. — Strategic Advisory
 Site-URL: https://ibprom.com
-Contact: j@josephsoares.com
+Contact: info@josephsoares.com
 Phone: +1-613-691-9311 ext. 101 (IBPROM main line)
 Canonical-entity: International Business Promotion (IBPROM) Corp. (federally incorporated in Canada)
 
@@ -49,7 +49,7 @@ highest levels of government and private enterprise.
 
 ## Engagement
 Engagement begins with a conversation. Founders, executives, or business leaders exploring a
-senior advisory relationship start at https://josephsoares.com/call.html or email j@josephsoares.com.
+senior advisory relationship start at https://josephsoares.com/call.html or email info@josephsoares.com.
 
 ## Related entity
 Joseph Soares's personal authority site and intelligence work: https://josephsoares.com
